@@ -15,7 +15,7 @@
   
 ## Project description
 
-The project is a weather journal app made using Node.js and Express. The website takes the zip code of the city you want the temperature at and your feelings and when the generate button is clicked, the data from the OpenWeather API and the user input is stored on the server and then the UI will be updated to display that data.
+The project is a weather journal app made using Node.js and Express and asynchronous JavaScript to use Web API and user data to dynamically update the UI. The website takes the zip code of the city you want the temperature at and your feelings and when the generate button is clicked, the data from the OpenWeather API and the user input is stored on the server and then the UI will be updated to display that data.
 
 
 ## Project Parts
