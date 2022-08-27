@@ -57,14 +57,18 @@ const retrieveData = async () => {
 function clicked() {
     const zip = document.getElementById('zip').value;
     const feel = document.getElementById('feelings').value;
-    
-    getData(url,zip,apiKey)
-    .then((data) => {
-        postData('/weather',{temp: data.main.temp,
-            date: newDate,
-            content: feel
-        }).then(retrieveData());
-    })
+    if(!feel || !zip){
+        alert("enter the zip code and youe feelings");
+    }
+    else{
+        getData(url,zip,apiKey)
+        .then((data) => {
+            postData('/weather',{temp: data.main.temp,
+                date: newDate,
+                content: feel
+            }).then(retrieveData());
+        })    
+    }
 }
 //Events
 generate.addEventListener('click',clicked);
