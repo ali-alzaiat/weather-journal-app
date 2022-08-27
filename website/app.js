@@ -7,7 +7,9 @@ const apiKey = '&appid=f21440277e4920afc4bd9fb952639bf1&units=imperial';
 const generate = document.getElementById('generate');
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let month = d.getMonth()+1;
+let newDate = month+'.'+ d.getDate()+'.'+ d.getFullYear();
+
 // Get the data from the API.
 const getData = async (url,zip,apiKey) => {
     const response = await fetch(url+zip+apiKey);
