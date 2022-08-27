@@ -8,6 +8,7 @@
   * [Most Recent Entry](#most-recent-entry)
 * [Project parts](#project-parts)
 * [Usage](#usage)
+* [Installation](#installation)
   
   
   
@@ -37,3 +38,6 @@ To display the most recent entry received from the server.
 ## Usage
 
 Get the temperature in any city you want by using its zip code.
+
+## Installation
+You will need to install node, express, cors, and body-parser packages in the same directory as the project.
