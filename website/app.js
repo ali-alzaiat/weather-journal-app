@@ -13,7 +13,6 @@ const getData = async (url,zip,apiKey) => {
     const response = await fetch(url+zip+apiKey);
     try{
         let data = await response.json();
-        console.log(data);
         return data;
     }
     catch(e){
@@ -59,10 +58,6 @@ function clicked() {
     
     getData(url,zip,apiKey)
     .then((data) => {
-        console.log({temp: data.main.temp,
-            date: newDate,
-            content: feel
-        });
         postData('/weather',{temp: data.main.temp,
             date: newDate,
             content: feel
